@@ -15,8 +15,6 @@ end
 # {/fact}
 
 # {fact rule=insufficiently-protected-credentials@v1.0 defects=0}
-require 'jwt'
-
 def insufficiently_protected_credentials_compliant(hmac_secret)
   # Compliant: JWT password is not hardcoded.
   payload = { data: 'data', nbf: nbf }

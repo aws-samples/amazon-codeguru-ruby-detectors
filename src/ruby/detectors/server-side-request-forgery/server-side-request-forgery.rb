@@ -14,8 +14,6 @@ end
 # {/fact}
 
 # {fact rule=server-side-request-forgery@v1.0 defects=0}
-require 'net/http'
-
 def server_side_request_forgery_compliant
   url = params[:url]
   # Compliant: url is not passing through `HTTP.get()`.

@@ -13,8 +13,6 @@ end
 # {/fact}
 
 # {fact rule=insecure-cryptography@v1.0 defects=0}
-require 'openssl'
-
 def cryptography_compliant()
   # Compliant: strong encryption algorithm
   OpenSSL::Cipher::AES.new(128, :gcm)

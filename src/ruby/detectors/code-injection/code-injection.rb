@@ -6,7 +6,7 @@ SPDX-License-Identifier: Apache-2.0
 # {fact rule=code-injection@v1.0 defects=1}
 def code_injection_noncompliant()
   code = params[:code]
-  # Noncompliant: 'code' is not sanitized.
+  # Noncompliant: User input is not sanitized.
   @result = User.send(code)
 end
 # {/fact}

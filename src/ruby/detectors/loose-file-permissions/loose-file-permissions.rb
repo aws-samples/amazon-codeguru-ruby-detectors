@@ -14,8 +14,6 @@ end
 # {/fact}
 
 # {fact rule=loose-file-permissions@v1.0 defects=0}
-require "fileutils"
-
 def open_file_permission_compliant(filename)
 
   # Compliant: restricts group/world access.
